@@ -4,7 +4,7 @@
 
 - [] add header to layout
 - [] create ep. nav buttons
-- [] turn buttons into a component
+- [x] turn buttons into a component
 - [] tweak dark mode
   - [] fix button colors
 - [] add grain to background

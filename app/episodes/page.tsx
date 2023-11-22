@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { Button } from "@/app/ui/Button";
 
 const Page = () => {
   return (
@@ -19,9 +20,9 @@ const Page = () => {
             10 FILMES DE TERROR COM TRILHAS SONORAS ASSUSTADORAS
           </h1>
           <h2 className="font-light mt-4">Novembro 9, 2023</h2>
-          <button className="h-8 px-6 font-light text-indigo-100 transition-colors duration-150 bg-slate-950 rounded-full focus:shadow-outline hover:opacity-75 mt-8">
-            Ouça no Spotify
-          </button>
+          <div className="mt-8">
+            <Button text="Ouça o episódio" />
+          </div>
         </div>
         <div className="mt-auto hidden md:block">
           <p className="text-xs">
@@ -31,12 +32,8 @@ const Page = () => {
             Ajude o podcast como puder.
           </p>
           <div className="mt-4 flex gap-2">
-            <button className="h-8 px-6 font-light text-indigo-100 transition-colors duration-150 bg-slate-950 rounded-full focus:shadow-outline hover:opacity-75">
-              Spotify
-            </button>
-            <button className="h-8 px-6 font-light border border-slate-950 transition-colors duration-150 bg-transparent rounded-full focus:shadow-outline hover:opacity-75 ">
-              Website
-            </button>
+            <Button text="Spotify" />
+            <Button text="Website" secondary />
           </div>
         </div>
       </aside>
