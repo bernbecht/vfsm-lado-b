@@ -21,7 +21,21 @@ const Page = () => {
             10 FILMES DE TERROR COM TRILHAS SONORAS ASSUSTADORAS
           </h1>
           <h2 className="font-light mt-4">Novembro 9, 2023</h2>
-          <button>Ouça</button>
+        <div className="mt-auto hidden md:block">
+          <p className="text-xs">
+            Este é um site independente e nao relacionado ao podcast Vamos Falar
+            Sobre Música. <br />
+            <br />
+            Ajude o podcast como puder.
+          </p>
+          <div className="mt-4 flex gap-2">
+            <button className="h-8 px-6 font-light text-indigo-100 transition-colors duration-150 bg-slate-950 rounded-full focus:shadow-outline hover:opacity-75">
+              Spotify
+            </button>
+            <button className="h-8 px-6 font-light border border-slate-950 transition-colors duration-150 bg-transparent rounded-full focus:shadow-outline hover:opacity-75 ">
+              Website
+            </button>
+          </div>
         </div>
       </aside>
       <main className="md:w-2/3 md:max-h-screen md:overflow-x-scroll">
