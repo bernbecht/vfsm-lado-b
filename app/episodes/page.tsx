@@ -12,8 +12,7 @@ const Page = () => {
           width={0}
           height={0}
           sizes="100vw"
-          className="rounded-lg	drop-shadow-2xl"
-          style={{ width: "100%", height: "auto" }}
+          className="rounded-lg	drop-shadow-2xl md:w-4/5 w-full"
         />
         <div className="mt-8">
           <h2 className="font-light">#017</h2>
