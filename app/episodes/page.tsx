@@ -4,8 +4,7 @@ import React from "react";
 const Page = () => {
   return (
     <div className="flex gap-20 md:gap-32 flex-col md:flex-row ">
-      <aside className="md:w-1/3">
-        {/* Content for the left column */}
+      <aside className="md:w-1/3 flex flex-col">
         <Image
           src="https://vamosfalarsobremusica.com.br/wp-content/uploads/2021/12/lado_b_16_1.jpg"
           alt=""
@@ -110,15 +109,15 @@ const Page = () => {
             ></iframe>
           </li>
           <li>
-        <iframe
-          style={{ borderRadius: `12px` }}
-          src="https://open.spotify.com/embed/album/1wwqM1k1J1UY74eEDav9rE?utm_source=generator&theme=0"
-          width="100%"
-          height="152"
-          frameBorder="0"
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          loading="lazy"
-        ></iframe>
+            <iframe
+              style={{ borderRadius: `12px` }}
+              src="https://open.spotify.com/embed/album/1wwqM1k1J1UY74eEDav9rE?utm_source=generator&theme=0"
+              width="100%"
+              height="152"
+              frameBorder="0"
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            ></iframe>
           </li>
         </ul>
       </main>
