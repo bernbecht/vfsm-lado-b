@@ -3,7 +3,7 @@ import React from "react";
 
 const Page = () => {
   return (
-    <div className="flex gap-20 md:gap-32 flex-col md:flex-row ">
+    <div className="flex gap-20 md:gap-32 flex-col md:flex-row md:h-full">
       <aside className="md:w-1/3 flex flex-col">
         <Image
           src="https://vamosfalarsobremusica.com.br/wp-content/uploads/2021/12/lado_b_16_1.jpg"
