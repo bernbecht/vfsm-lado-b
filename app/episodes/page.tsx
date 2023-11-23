@@ -4,7 +4,7 @@ import { Button } from "@/app/ui/Button";
 
 const Page = () => {
   return (
-    <div className="flex gap-20 md:gap-32 flex-col md:flex-row md:h-full">
+    <div className="flex gap-20 md:gap-32 flex-col md:flex-row md:max-h-[85vh]">
       <aside className="md:w-1/3 flex flex-col">
         <Image
           src="https://vamosfalarsobremusica.com.br/wp-content/uploads/2021/12/lado_b_16_1.jpg"
