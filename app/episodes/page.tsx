@@ -16,7 +16,7 @@ const Page = () => {
         />
         <div className="mt-8">
           <h2 className="font-light">#017</h2>
-          <h1 className="text-4xl font-bold ">
+          <h1 className="text-4xl font-bold tracking-tighter">
             10 FILMES DE TERROR COM TRILHAS SONORAS ASSUSTADORAS
           </h1>
           <h2 className="font-light mt-4">Novembro 9, 2023</h2>
