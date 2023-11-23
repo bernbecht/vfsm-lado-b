@@ -16,10 +16,6 @@
   }
 }
 
-html {
-  height: 100%;
-}
-
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -29,5 +25,4 @@ body {
   );
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 100%;
 }
