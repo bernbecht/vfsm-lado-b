@@ -37,14 +37,14 @@ const Page = () => {
           </div>
         </div>
       </aside>
-      <main className="md:w-2/3 md:max-h-screen md:overflow-x-scroll">
+      <main className="md:w-2/3  md:overflow-y-scroll ">
         <ul className="flex flex-col gap-8">
           <li>
             <iframe
               style={{ borderRadius: `12px` }}
               src="https://open.spotify.com/embed/album/1wwqM1k1J1UY74eEDav9rE?utm_source=generator&theme=0"
               width="100%"
-              height="152"
+              height="352"
               frameBorder="0"
               allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
               loading="lazy"
@@ -55,7 +55,7 @@ const Page = () => {
               style={{ borderRadius: `12px` }}
               src="https://open.spotify.com/embed/album/1wwqM1k1J1UY74eEDav9rE?utm_source=generator&theme=0"
               width="100%"
-              height="152"
+              height="352"
               frameBorder="0"
               allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
               loading="lazy"
@@ -66,7 +66,7 @@ const Page = () => {
               style={{ borderRadius: `12px` }}
               src="https://open.spotify.com/embed/album/1wwqM1k1J1UY74eEDav9rE?utm_source=generator&theme=0"
               width="100%"
-              height="152"
+              height="352"
               frameBorder="0"
               allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
               loading="lazy"
@@ -77,7 +77,7 @@ const Page = () => {
               style={{ borderRadius: `12px` }}
               src="https://open.spotify.com/embed/album/1wwqM1k1J1UY74eEDav9rE?utm_source=generator&theme=0"
               width="100%"
-              height="152"
+              height="352"
               frameBorder="0"
               allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
               loading="lazy"
@@ -88,7 +88,7 @@ const Page = () => {
               style={{ borderRadius: `12px` }}
               src="https://open.spotify.com/embed/album/1wwqM1k1J1UY74eEDav9rE?utm_source=generator&theme=0"
               width="100%"
-              height="152"
+              height="352"
               frameBorder="0"
               allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
               loading="lazy"
@@ -99,18 +99,7 @@ const Page = () => {
               style={{ borderRadius: `12px` }}
               src="https://open.spotify.com/embed/album/1wwqM1k1J1UY74eEDav9rE?utm_source=generator&theme=0"
               width="100%"
-              height="152"
-              frameBorder="0"
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              loading="lazy"
-            ></iframe>
-          </li>
-          <li>
-            <iframe
-              style={{ borderRadius: `12px` }}
-              src="https://open.spotify.com/embed/album/1wwqM1k1J1UY74eEDav9rE?utm_source=generator&theme=0"
-              width="100%"
-              height="152"
+              height="352"
               frameBorder="0"
               allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
               loading="lazy"
