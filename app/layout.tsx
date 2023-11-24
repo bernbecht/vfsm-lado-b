@@ -29,9 +29,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} max-w-7xl mx-auto md:p-9 p-4 `}>
-        <nav className="mb-20 pb-9 border-b border-black flex justify-between content-center">
+        <nav className="md:mb-20 mb-10 md:pb-9 md:border-b border-black flex flex-col md:flex-row items-center justify-between content-center">
           <span className={`${sinaloa.className} text-2xl`}>Compilado B</span>
-          <div className="flex gap-2">
+          <div className="md:flex gap-2 hidden ">
             <Button text="<- #18" secondary></Button>
             <Button text="#16 ->" secondary></Button>
           </div>
