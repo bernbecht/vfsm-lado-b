@@ -313,18 +313,20 @@ body {
   background-attachment: fixed;
 }
 
-/* custom scrollbar */
-::-webkit-scrollbar {
-  width: 37px;
-}
+.custom-scroll {
+  /* custom scrollbar */
+  &::-webkit-scrollbar {
+    width: 37px;
+  }
 
-::-webkit-scrollbar-track {
-  background-color: transparent;
-}
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
 
-::-webkit-scrollbar-thumb {
-  background-color: HSL(var(--slate-950));
-  border-radius: 20px;
-  border: 17px solid transparent;
-  background-clip: content-box;
+  &::-webkit-scrollbar-thumb {
+    background-color: HSL(var(--slate-950));
+    border-radius: 20px;
+    border: 17px solid transparent;
+    background-clip: content-box;
+  }
 }
