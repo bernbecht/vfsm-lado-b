@@ -37,7 +37,7 @@ const Page = () => {
           </div>
         </div>
       </aside>
-      <main className="md:w-2/3  md:overflow-y-scroll ">
+      <main className="md:w-2/3  md:overflow-y-scroll custom-scroll">
         <ul className="flex flex-col gap-8">
           <li>
             <iframe
