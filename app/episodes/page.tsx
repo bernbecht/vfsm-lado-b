@@ -24,18 +24,6 @@ const Page = () => {
             <Button text="Ouça o episódio" />
           </div>
         </div>
-        <div className="mt-auto hidden md:block">
-          <p className="text-xs">
-            Este é um site independente e nao relacionado ao podcast Vamos Falar
-            Sobre Música. <br />
-            <br />
-            Ajude o podcast como puder.
-          </p>
-          <div className="mt-4 flex gap-2">
-            <Button text="Spotify" />
-            <Button text="Website" secondary />
-          </div>
-        </div>
       </aside>
       <main className="md:w-2/3  md:overflow-y-scroll custom-scroll">
         <ul className="flex flex-col gap-8">

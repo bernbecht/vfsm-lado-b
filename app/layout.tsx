@@ -37,6 +37,33 @@ export default function RootLayout({
           </div>
         </nav>
         {children}
+        <footer className="mt-24 border-t border-black pt-10">
+          <div className="flex justify-between">
+            <div className="md:w-1/3">
+              <div className={`${sinaloa.className} text-2xl mb-4`}>
+                Compilado B
+              </div>
+              <p className="text-xs">
+                Este é um site independente e nao relacionado ao podcast
+                <br />
+                <i>Vamos Falar Sobre Música.</i> <br />
+                <br />
+                Ajude o podcast como puder.
+              </p>
+              <div className="mt-4 flex gap-2">
+                <Button text="Spotify" />
+                <Button text="Website" secondary />
+              </div>
+            </div>
+            <div className="md:flex gap-2 hidden ">
+              <Button text="<- #18" secondary></Button>
+              <Button text="#16 ->" secondary></Button>
+            </div>
+          </div>
+          <div className="text-xs font-light opacity-75 mt-4">
+            Ⓒ 2023 - Feito com 🤘 por Bernardo Bechtold
+          </div>
+        </footer>
       </body>
     </html>
   );
