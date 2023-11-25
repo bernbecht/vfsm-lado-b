@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.scss";
 import { Button } from "./ui/Button";
+import { EpisodeNavButtons } from "./ui/EpisodeNavButtons";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,10 +32,7 @@ export default function RootLayout({
       <body className={`${inter.className} max-w-7xl mx-auto md:p-9 p-4 `}>
         <nav className="md:mb-20 mb-10 md:pb-9 md:border-b border-black flex flex-col md:flex-row items-center justify-between content-center">
           <span className={`${sinaloa.className} text-2xl`}>Compilado B</span>
-          <div className="md:flex gap-2 hidden ">
-            <Button text="<- #18" secondary></Button>
-            <Button text="#16 ->" secondary></Button>
-          </div>
+          <EpisodeNavButtons />
         </nav>
         {children}
         <footer className="mt-24 border-t border-black pt-10">
@@ -55,10 +53,7 @@ export default function RootLayout({
                 <Button text="Website" secondary />
               </div>
             </div>
-            <div className="md:flex gap-2 hidden ">
-              <Button text="<- #18" secondary></Button>
-              <Button text="#16 ->" secondary></Button>
-            </div>
+            <EpisodeNavButtons />
           </div>
           <div className="text-xs font-light opacity-75 mt-4">
             Ⓒ 2023 - Feito com 🤘 por Bernardo Bechtold
