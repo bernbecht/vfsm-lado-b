@@ -24,14 +24,14 @@ async function openUrl(url) {
     });
 
     const epsData = await Promise.all(
-      urls.map(async (url) => {
+      urls.map(async (url, index) => {
         const page = await browser.newPage();
         await page.goto(url);
         await page.waitForSelector(
           ".elementor-widget-theme-post-featured-image"
         );
 
-        const epData = await page.evaluate(() => {
+        const epData = await page.evaluate((index) => {
           const titleEl = document.querySelector(
             ".elementor-heading-title.elementor-size-medium"
           );
@@ -50,9 +50,8 @@ async function openUrl(url) {
           const spotifyEl = document.querySelector("iframe");
           const spotify_url = spotifyEl.src;
 
-          return { title, release_date, img, spotify_url };
-        });
-
+          return { id: index, title, release_date, img, spotify_url };
+        }, index);
         return epData;
       })
     );
