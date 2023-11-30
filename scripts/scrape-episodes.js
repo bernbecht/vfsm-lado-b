@@ -1,8 +1,9 @@
 const puppeteer = require("puppeteer");
 const fs = require("fs");
 
-let start = Date.now();
+const start = Date.now();
 const url = "https://vamosfalarsobremusica.com.br/eps-4-0/";
+const outputFile = "../app/data/episodes.json";
 
 async function openUrl(url) {
   console.log("👀 Fetching data...");
@@ -62,7 +63,7 @@ async function openUrl(url) {
     // write in file
     console.log("📝 Writing data to file...");
     const data = JSON.stringify(epsData);
-    fs.writeFileSync("../app/data/episodes.json", data);
+    fs.writeFileSync(outputFile, data);
   } catch (error) {
     console.error("Error opening URL:", error);
   }
