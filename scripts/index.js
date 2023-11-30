@@ -1,10 +1,12 @@
 const puppeteer = require("puppeteer");
+const fs = require("fs");
 
 let start = Date.now();
-
 const url = "https://vamosfalarsobremusica.com.br/eps-4-0/";
 
 async function openUrl(url) {
+  console.log("👀 Fetching data...");
+
   try {
     const browser = await puppeteer.launch({ headless: true });
     const page = await browser.newPage();
@@ -48,7 +50,6 @@ async function openUrl(url) {
           const spotifyEl = document.querySelector("iframe");
           const spotify_url = spotifyEl.src;
 
-          console.log({ title, releaseDate, img, spotifyUrl });
           return { title, release_date, img, spotify_url };
         });
 
@@ -57,12 +58,15 @@ async function openUrl(url) {
     );
 
     await browser.close();
-    console.log(epsData);
-    console.log(`Finished in: `, Date.now() - start);
+    console.log(`⏱️ Fetch finished in: `, Date.now() - start);
+
+    // write in file
+    console.log("📝 Writing data to file...");
+    const data = JSON.stringify(epsData);
+    fs.writeFileSync("data.json", data);
   } catch (error) {
     console.error("Error opening URL:", error);
   }
 }
 
 openUrl(url);
-console.log("Fetching data...");
