@@ -3,7 +3,7 @@ const fs = require("fs");
 
 const start = Date.now();
 const url = "https://vamosfalarsobremusica.com.br/eps-4-0/";
-const outputFile = "../app/data/episodes.json";
+const outputFile = "../app/lib/episodes.json";
 
 async function openUrl(url) {
   console.log("👀 Fetching data...");
