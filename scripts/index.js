@@ -11,7 +11,6 @@ async function openUrl(url) {
     const browser = await puppeteer.launch({ headless: true });
     const page = await browser.newPage();
     await page.goto(url);
-    await page.screenshot({ path: "1.png" });
 
     const urls = await page.evaluate(() => {
       const anchorEls = document.querySelectorAll("a");
@@ -63,7 +62,7 @@ async function openUrl(url) {
     // write in file
     console.log("📝 Writing data to file...");
     const data = JSON.stringify(epsData);
-    fs.writeFileSync("data.json", data);
+    fs.writeFileSync("../app/data/episodes.json", data);
   } catch (error) {
     console.error("Error opening URL:", error);
   }
