@@ -10,6 +10,11 @@ const preview: Preview = {
         date: /Date$/i,
       },
     },
+    designToken: {
+      disable: false,
+      defaultTab: "Colors",
+      showSearch: true,
+    },
   },
 };
 

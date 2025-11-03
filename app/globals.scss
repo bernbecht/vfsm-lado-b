@@ -7,6 +7,11 @@
   --background-start-rgb: 207, 203, 255;
   --background-end-rgb: 225, 214, 204;
 
+  /**
+  * @tokens Colors
+  * @presenter Color
+  */
+
   /* Slate */
   --slate-50: 210 40% 98%;
   --slate-100: 210 40% 96.1%;
@@ -292,6 +297,13 @@
   --rose-800: 343.4 79.7% 34.7%;
   --rose-900: 341.5 75.5% 30.4%;
   --rose-950: 343.1 87.7% 15.9%;
+
+  /**
+  * @tokens Animations
+  * @presenter Animation
+  */
+
+  --animation-rotate: rotate 1.2s infinite cubic-bezier(0.55, 0, 0.1, 1);
 }
 
 @media (prefers-color-scheme: dark) {
